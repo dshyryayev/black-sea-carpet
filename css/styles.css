@@ -775,6 +775,12 @@ a { color: inherit; }
 }
 
 @media (min-width: 1024px) {
+  .hero {
+    min-height: calc(100vh - var(--header-h));
+    min-height: calc(100svh - var(--header-h));
+    display: grid;
+    align-content: center;
+  }
   .hero-inner { grid-template-columns: 1fr 1fr; }
   .hero-card {
     position: absolute;
